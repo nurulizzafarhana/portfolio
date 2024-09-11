@@ -166,9 +166,10 @@
 
 .about {
   width: 50%;
-  margin-bottom: 70rem;
+  margin-left: 0rem;
+  margin-bottom: 2rem; /* Kurangi dari 70rem */
   min-height: 20vh;
-  background: rgb(8, 80, 14);
+  /* background: rgb(8, 80, 14); */
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
@@ -179,14 +180,10 @@
 
 .about__content {
   width: 150%;
+  background-color: rgb(8, 80, 14);
   padding: 1rem;
-  margin-left: 7.5rem;
+  margin-left: 7rem;
   margin-bottom: 30px;
-}
-
-.about__content h3 {
-  font-size: 24px;
-  color: rgb(255, 255, 255);
 }
 
 .about__content h2 {
@@ -245,28 +242,62 @@
   border-width: 2px;
 }
 
-.about__content__more iframe {
+.about__content__more a {
   margin: 3rem 3.5rem;
   padding: 1rem 2rem;
 }
 
 .contact__form {
-  width: 180%;
-  padding: 1rem;
-  margin-left: 5rem;
-  margin-bottom: 2rem;
+  width: 30%;
+  padding: 0.5rem;
+  text-align: center;
+  margin-left: 30rem;
+  margin-bottom: 4rem; /* Kurangi dari 100rem */
+}
+
+.contact__form h2 {
+  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+}
+
+.contact__form span {
+  color: rgb(8, 80, 14);
+  background-color: rgb(240, 255, 61);
+}
+
+.contact__form form {
+  text-align: center;
+  padding: 0.5em;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: rgb(240, 255, 61);
   border-color: rgba(0, 0, 0, 0.87);
+}
+
+.contact__form .input__box input,
+.contact__form form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  border: transparent;
+  border-radius: 0.5rem;
+  resize: none;
 }
 
 .contact__me {
   padding: 0.5rem;
+  margin-left: 5rem;
+  margin-bottom: 2rem;
   color: rgb(255, 255, 255);
   text-align: center;
 }
 
-/* Responsive
-@media (max-width: 768px) {
-  .budgets {
+/* Responsive */
+/* @media (max-width: 768px) {
+  .about {
     padding: 1rem;
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }

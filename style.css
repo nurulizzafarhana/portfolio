@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Kumbh Sans", sans-serif;
+  /* font-family: "Archivo", "Cutive", sans-serif; */
   text-decoration: none;
   list-style: none;
 }
@@ -12,9 +12,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 25px 10px;
-  background: rgb(8, 80, 14);
+  padding: 20px 10px;
+  border-bottom: 2px solid rgb(8, 80, 14); /*This adds a line under the header*/
+  backdrop-filter: blur(2px); /* Apply a blur effect to the background */
   backdrop-filter: blur;
+  font-family: "Archivo", sans-serif;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.87);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,20 +43,19 @@
 .navbar a {
   font-size: 20px;
   font-weight: 550;
-  color: rgb(240, 255, 61);
-  padding: 0.1rem;
-  margin-right: 5.5rem;
-  border-bottom: 3px solid transparent;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 0.5rem;
+  margin-right: 10rem;
   transition: 0.35s ease;
 }
 
 .navbar a:hover,
 .navbar a.active {
-  color: rgb(255, 255, 255);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+  color: rgb(240, 255, 61);
+  background-color: rgba(0, 0, 0, 0.87);
 }
 
-.contact {
+/* .contact {
   padding: 10px 10px;
   background-color: rgb(255, 255, 255);
   color: rgba(0, 0, 0, 0.87);
@@ -68,7 +71,7 @@
   background-color: rgb(240, 255, 61);
   color: rgb(8, 80, 14);
   box-shadow: rgba(0, 0, 0, 0.87);
-}
+} */
 
 .home {
   width: 100%;
@@ -84,25 +87,29 @@
 
 .home__content__greetings {
   width: 130%;
-  padding: 1rem;
+  padding: 4rem;
   margin-left: 6rem;
 }
 
 .home__content__greetings h1 {
+  font-family: "Archivo", sans-serif;
   font-size: 32px;
   line-height: 1.5;
 }
 
 .home__content__greetings h3 {
-  font-size: 24px;
+  font-family: "Archivo", sans-serif;
+  font-size: 22px;
   color: rgba(0, 0, 0, 0.87);
 }
 
 .home__content__greetings p {
-  font-size: 17px;
-  font-weight: 450;
+  font-family: "Cutive", serif;
+  font-size: 16px;
+  font-weight: 550;
   padding: 0.15rem 0.5px;
   text-align: justify;
+  line-height: 1.5;
 }
 
 .home span {
@@ -120,25 +127,24 @@
 .photo__content img {
   margin: 0.5rem 2rem;
   width: 110px;
-  border-radius: 20%;
-  border: 3px solid transparent;
-  border-style: solid transparet;
+  border: 2px solid transparent;
+  border-style: solid;
   border-color: rgb(8, 80, 14);
 }
 
 .btn__box {
   display: flex;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   width: 100%;
   gap: 0.5rem;
 }
 
 .btn__cv {
-  padding: 10px 1rem;
+  font-family: "Archivo", sans-serif;
+  padding: 6px 1rem;
   background-color: rgba(0, 0, 0, 0.87);
   color: rgb(255, 255, 255);
   border: 2px solid transparent;
-  border-radius: 12px;
   letter-spacing: 0.5px;
   font-weight: 500;
   transition: 0.3s ease;
@@ -152,7 +158,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -165,7 +171,7 @@
 }
 
 .about {
-  width: 50%;
+  width: 60%;
   margin-left: 0rem;
   margin-bottom: 2rem; /* Kurangi dari 70rem */
   min-height: 20vh;
@@ -179,8 +185,10 @@
 }
 
 .about__content {
-  width: 150%;
+  width: 170%;
   background-color: rgb(8, 80, 14);
+  background-image: url("/texture.png");
+  background-blend-mode: multiply;
   padding: 1rem;
   margin-left: 7rem;
   margin-bottom: 30px;
@@ -188,6 +196,7 @@
 
 .about__content h2 {
   margin: 2px 2px;
+  font-family: "Archivo", sans-serif;
   font-size: 28px;
   line-height: 1.5;
   color: rgb(240, 255, 61);
@@ -195,31 +204,36 @@
 }
 
 .about__content span {
-  font-size: 28px;
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 22px;
+  font-family: "Cutive", serif;
   line-height: 1.5;
 }
 
 .about__content p {
-  font-size: 17px;
+  font-family: "Cutive", serif;
+  font-size: 16px;
   font-weight: 450;
+  line-height: 1.5;
   padding: 0.15rem 0.5px;
   text-align: justify;
   color: rgb(255, 255, 255);
 }
 
 .btn__box__read {
-  padding: 2rem;
+  padding: 1rem;
   padding-left: 0.2rem;
   width: 100%;
 }
 
 .btn__cv__read {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.87);
   color: rgb(255, 255, 255);
+  font-family: "Archivo", sans-serif;
   border: 2px solid transparent;
-  border-radius: 12px;
   letter-spacing: 0.5px;
   font-weight: 750;
   transition: 0.3s ease;
@@ -233,22 +247,41 @@
 }
 
 .about__content__more {
-  width: 150%;
-  padding: 1rem;
-  margin-left: 28rem;
-  margin-bottom: 1rem;
-  border-color: rgba(0, 0, 0, 0.87);
-  border-style: dashed;
-  border-width: 2px;
+  width: 100%;
+  margin-left: 29rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cutout-paper {
+  margin-left: 2.5rem;
+  width: 250px; /* Adjust as needed */
+  height: 12rem;
+}
+
+.more__link {
+  width: 65%;
+  padding: 0.5rem;
+  margin-left: 3.5rem;
 }
 
 .about__content__more a {
-  margin: 3rem 3.5rem;
-  padding: 1rem 2rem;
+  border-style: solid;
+  border-width: 2px;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-left: 1.2rem;
+  font-size: 2rem; /* Adjust the size of the icons */
+  color: rgba(0, 0, 0, 0.87); /* Set the color of the icons */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.about__content__more a:hover {
+  color: rgb(8, 80, 14); /* Change color when hovering over the icons */
 }
 
 .contact__form {
-  width: 30%;
+  width: 100%;
   padding: 0.5rem;
   text-align: center;
   margin-left: 30rem;
@@ -256,13 +289,14 @@
 }
 
 .contact__form h2 {
+  font-family: "Archivo", sans-serif;
   color: rgba(0, 0, 0, 0.87);
   text-align: center;
 }
 
 .contact__form span {
-  color: rgb(8, 80, 14);
-  background-color: rgb(240, 255, 61);
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.87);
 }
 
 .contact__form form {
@@ -277,13 +311,12 @@
 
 .contact__form .input__box input,
 .contact__form form textarea {
+  font-family: "Archivo", sans-serif;
   width: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  font-size: 0.8rem;
   border: transparent;
-  border-radius: 0.5rem;
   resize: none;
 }
 
